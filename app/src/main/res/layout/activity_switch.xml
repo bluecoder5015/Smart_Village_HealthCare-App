@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_gradient"
+    tools:context=".SwitchActivity">
+
+    <ImageButton
+        android:id="@+id/user_page"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_rounded"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/doctor_page"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="DOCTOR"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_page"
+        app:layout_constraintStart_toStartOf="@+id/doctor_page"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_page" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="USER"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/user_page"
+        app:layout_constraintStart_toStartOf="@+id/user_page"
+        app:layout_constraintTop_toBottomOf="@+id/user_page" />
+
+    <ImageButton
+        android:id="@+id/doctor_page"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/doctor"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doctor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/user_page"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

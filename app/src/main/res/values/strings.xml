@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Hacathon_Project</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="not_registered_register_now"><u> Doesn`t have account! Register </u></string>
+    <string name="forgot">Forgot Password..?</string>
+
+    <string-array name="Country">
+        <item>India</item>
+    </string-array>
+    <string-array name="Cities">
+        <item>Mumbai</item>
+        <item>Bhopal</item>
+        <item>Indore</item>
+        <item>Hyderabad</item>
+        <item>Delhi</item>
+        <item>Jaipur</item>
+    </string-array>
+    <string-array name="villages_mumbai">
+        <item>Ambivali</item>
+        <item>Andheri</item>
+        <item>Bandivali</item>
+        <item>Bandra</item>
+    </string-array>
+    <string-array name="villages_bhopal">
+        <item>Acharpura</item>
+        <item>Agariya</item>
+        <item>Amarpura</item>
+        <item>Amjhira</item>
+    </string-array>
+    <string-array name="None">
+        <item> </item>
+    </string-array>
+</resources>
