@@ -152,7 +152,8 @@ class RegisterActivity : AppCompatActivity() {
                     }
 
 
-                    val BASE_URL = "http://192.168.43.208:3000"
+                    //val BASE_URL = "http://192.168.43.208:3000"
+                    val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
                     val retrofit: Retrofit = Retrofit.Builder()
                         .baseUrl(BASE_URL)

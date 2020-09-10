@@ -25,7 +25,8 @@ class HealthIssue_Form : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_healthissue__form)
 
-        val BASE_URL = "http://192.168.43.208:3000"
+       // val BASE_URL = "http://192.168.43.208:3000"
+        val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
 
         val  Name_Pattern:String= "[a-zA-Z.\\s]+"

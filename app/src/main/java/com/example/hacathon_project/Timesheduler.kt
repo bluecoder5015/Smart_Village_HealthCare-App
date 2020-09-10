@@ -28,7 +28,8 @@ class Timesheduler : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timesheduler)
 
-        val BASE_URL = "http://192.168.43.208:3000"
+        //val BASE_URL = "http://192.168.43.208:3000"
+        val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
 
         var formate = SimpleDateFormat("dd/ MM /YYYY",Locale.getDefault())
@@ -75,7 +76,7 @@ class Timesheduler : AppCompatActivity() {
 
         val  USERNAME_PATTERN:String= "[a-zA-Z.\\s]+"
 
-        var pattern: Pattern
+        val pattern: Pattern
         pattern = Pattern.compile(USERNAME_PATTERN)
 
         submit_time.setOnClickListener {

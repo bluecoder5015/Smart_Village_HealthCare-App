@@ -32,5 +32,5 @@ interface RetrofitInterface {
 
     @POST("/gettime")
     fun executeGettime(@Body map: HashMap<String?, String?>?): Call<Array<TimeTodos>?>?
-    
+
 }

@@ -20,8 +20,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 class DoctorLogin : AppCompatActivity() {
 
     lateinit var sharedPreferences: SharedPreferences
-    var isRemember =false
-    private val BASE_URL = "http://192.168.43.208:3000"
+    private var isRemember =false
+    //private val BASE_URL = "http://192.168.43.208:3000"
+    private val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

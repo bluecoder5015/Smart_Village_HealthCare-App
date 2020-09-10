@@ -34,7 +34,8 @@ class EmailVerificationDoctor : AppCompatActivity() {
             progress.show()
             val codeenter= dialog_code.editText?.text.toString()
             if (codeenter == text) {
-                val BASE_URL = "http://192.168.43.208:3000"
+                //val BASE_URL = "http://192.168.43.208:3000"
+                val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
                 val retrofit: Retrofit = Retrofit.Builder()
                     .baseUrl(BASE_URL)

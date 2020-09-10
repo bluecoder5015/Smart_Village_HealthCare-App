@@ -26,10 +26,11 @@ class IssueRecycler_Activity : AppCompatActivity() {
         val village =intent.getStringExtra("village")
 
 
-        val BASE_URL = "http://192.168.43.208:3000"
+        //val BASE_URL = "http://192.168.43.208:3000"
+        val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
         val progress = ProgressDialog(this@IssueRecycler_Activity)
-        progress.setMessage("Verifying Credentials :) ")
+        progress.setMessage("Fetching Issue :) ")
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER)
         progress.isIndeterminate = true
         progress.show()

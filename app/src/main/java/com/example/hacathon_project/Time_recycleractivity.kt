@@ -26,10 +26,11 @@ class Time_recycleractivity : AppCompatActivity() {
         val village =intent.getStringExtra("village")
 
 
-        val BASE_URL = "http://192.168.43.208:3000"
+        //val BASE_URL = "http://192.168.43.208:3000"
+        val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
         val progress = ProgressDialog(this@Time_recycleractivity)
-        progress.setMessage("Verifying Credentials :) ")
+        progress.setMessage("Fetching schedule :) ")
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER)
         progress.isIndeterminate = true
         progress.show()

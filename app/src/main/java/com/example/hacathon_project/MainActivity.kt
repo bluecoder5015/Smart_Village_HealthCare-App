@@ -10,6 +10,7 @@ import android.text.TextUtils
 import android.widget.Toast
 import com.example.hacathon_project.Retrofit.RetrofitInterface
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_register.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,8 +20,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     lateinit var sharedPreferences: SharedPreferences
-    var isRemember =false
-    private val BASE_URL = "http://192.168.43.208:3000"
+    private var isRemember =false
+    //private val BASE_URL = "http://192.168.43.208:3000"
+    private val BASE_URL = "https://smartvillagehacksagon.herokuapp.com/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -118,13 +120,7 @@ class MainActivity : AppCompatActivity() {
                             this@MainActivity, "Wrong Credentials",
                             Toast.LENGTH_LONG
                         ).show()
-                        user_forgot.text = getString(R.string.forgot)
                         progress.dismiss()
-                        user_forgot.setOnClickListener {
-                            Intent(this@MainActivity,ForgotActivity::class.java).also {
-                                startActivity(it)
-                            }
-                        }
                     }
                     response.code() == 400 -> {
                         Toast.makeText(

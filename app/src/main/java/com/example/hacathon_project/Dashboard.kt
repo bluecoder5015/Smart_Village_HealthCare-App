@@ -77,7 +77,7 @@ class Dashboard : AppCompatActivity() {
                     val now = Calendar.getInstance()
                     val datePicker = DatePickerDialog(
                         this@Dashboard,
-                        DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+                        DatePickerDialog.OnDateSetListener { _, year, month, dayOfMonth ->
                             val selectedDate = Calendar.getInstance()
                             selectedDate.set(Calendar.YEAR, year)
                             selectedDate.set(Calendar.MONTH, month)
