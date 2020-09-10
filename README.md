@@ -2,7 +2,7 @@
 
 # Brief Description (Non- Technical)
 * This software contains an interface where all patients can submit their issues by specifying their problems and submitting them.
-* Doctor can view thir problems and can plan schedule timings and can provide treatements.
+* Doctor can view thir problems and can plan schedule timings and provide treatements.
 
 # Brief Description (Technical)
 * Kotlin , XML for frontend android development.
